@@ -1,0 +1,52 @@
+### GruvGRUB GRUB2 Theme
+
+# Global Property
+title-text:             "GRUB2"
+title-font:             "Iosevka NF 10"
+title-color:            "#98971A"
+message-font:           "Iosevka NF 10"
+message-color:          "#EBDBB2"
+message-bg-color:       "#A89984"
+desktop-color:          "#282828"
+terminal-font:          "Iosevka NF 10"
+
+# Boot Menu
++ boot_menu {
+  left =                15%
+  top =                 37%
+  width =               70%
+  height =              42%
+  item_font =           "Iosevka NF 10"
+  item_color =          "#98971A"
+  selected_item_color = "#EBDBB2"
+  item_height =         32
+  item_padding =        0
+  item_spacing =        3
+}
+
+# Boot Menu Info
+#+ vbox {
+#  left =                25%
+#  top =                 81%
+#  width =               70%
+#  + label { text = "- Press the UP and DOWN arrow keys to highlight an entry" color = "#EBDBB2" font = "Iosevka NF 8" }
+#  + label { text = "- Press the ENTER key to boot the highlighted entry" color = "#EBDBB2" font = "Iosevka NF 8" }
+#  + label { text = "- Press 'e' to edit the commands of the highlighted entry" color = "#EBDBB2" font = "Iosevka NF 8" }
+#  + label { text = "- Press 'c' for the GRUB command-line" color = "#EBDBB2" font = "Iosevka NF 8" }
+#}
+
+# Progress Bar
++ progress_bar {
+  id =                  "__timeout__"
+  left =                15%
+  top =                 100%-36
+  width =               70%
+  height =              18
+  bg_color =            "#076678"
+  fg_color =            "#458588"
+  border_color =        "#83A598"
+  show_text =           true
+  font =                "Iosevka NF 10"
+  text_color =          "#EBDBB2"
+  text =                "@TIMEOUT_NOTIFICATION_SHORT@"
+}
