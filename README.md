@@ -1,4 +1,5 @@
 # GruvGRUB
+![A screenshot of GruvGRUB.](doc/img/screenshot_gruvgrub.png)
 ## about
 A minimal gruvbox GRUB2 theme
 ## dependencies
